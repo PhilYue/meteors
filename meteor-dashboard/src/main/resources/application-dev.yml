@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: meteors
+  datasource:
+    initialization-mode: ALWAYS
+    schema:
+      - classpath:sql/schema.sql
+    data:
+      - classpath:sql/data.sql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/meteors?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username:
+      password:
+
